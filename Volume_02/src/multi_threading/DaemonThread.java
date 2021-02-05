@@ -16,7 +16,7 @@ public class DaemonThread implements Runnable{
 	}
 	
 	public static void main(String[] args) {
-		DaemonThread th = new DaemonThread();
+		new DaemonThread();
 		for(int i=0; i<100; i++) {
 			System.out.println(Thread.currentThread().isDaemon()+" main "+i);
 		}

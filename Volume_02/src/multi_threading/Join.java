@@ -7,7 +7,8 @@ public class Join extends Thread{
 			System.out.println(Thread.currentThread().getName() + "  "+i);
 			if(Thread.currentThread().getName().equals("child2")) {
 				try {
-					Thread.currentThread().sleep(1000);
+//					Thread.currentThread().sleep(1000);
+					Thread.sleep(1000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
